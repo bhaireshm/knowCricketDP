@@ -1,0 +1,21 @@
+{
+  "name": "knowcricketdp",
+  "version": "1.0.0",
+  "description": "using design patterns and TS",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npm run build\" \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+  },
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.5",
+    "@types/node": "^20.4.1",
+    "concurrently": "^8.2.0",
+    "typescript": "^5.1.6"
+  }
+}
